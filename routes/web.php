@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\translatorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,3 +22,6 @@ Route::get('/', function () {
 // ProductsController.php 
 Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/vegetables', [ProductsController::class, 'vegetables']);
+
+// translatorController.php
+Route::get('/translator', [translatorController::class, 'numbers']);
