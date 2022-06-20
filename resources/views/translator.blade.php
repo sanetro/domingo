@@ -7,6 +7,11 @@
     <title> Spanish Numbers to English language</title>
 </head>
 <body>
-    <h1>NUMBERS</h1> 
+    <h1>Translator</h1> 
+    <p> 
+        You choose <b> {{ $language }} </b>
+        Words are: <br>
+        <i> {{ $words }} </i>
+    </p>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
-use App\Http\Controllers\translatorController;
+use App\Http\Controllers\TranslatorController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,5 +23,7 @@ Route::get('/', function () {
 Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/vegetables', [ProductsController::class, 'vegetables']);
 
-// translatorController.php
-Route::get('/translator', [translatorController::class, 'numbers']);
+// TranslatorController.php
+// Below line of code works like, type in url domingo.bingo/translator and then you are redirect to index() function in TranslatorController.php
+Route::get('/translator', [TranslatorController::class, 'index']);
+Route::get('/translator/{languages}', [TranslatorController::class, 'translate']);

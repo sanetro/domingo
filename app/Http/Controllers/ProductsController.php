@@ -22,15 +22,4 @@ class ProductsController extends Controller
         ];
         return view('vegetables')->with('data', $data);
     }
-    
-    public function spanish($name){
-        $num_esp_eng = [
-            "one" => "uno",
-            "dos" => "two",
-            "tres" => "three"
-        ];
-        
-        return view('spanish', ['products' => $num_esp_eng[$name] ?? '']);
-    }
-
 }
