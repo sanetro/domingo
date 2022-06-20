@@ -14,14 +14,19 @@ use App\Http\Controllers\TranslatorController;
 |
 */
 
-// Main page 
+// Main page
 Route::get('/', function () {
     return view('welcome');
 });
 
-// ProductsController.php 
+// ProductsController.php
 Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/vegetables', [ProductsController::class, 'vegetables']);
+Route::get('products/pattern/{letters}/{numbers}',
+    [ProductsController::class, 'pattern']) -> where([
+        'letters' => '[a-zA-Z]+',
+        'numbers' => '(-[0-9]+)|([0-9]+)'
+    ]);
 
 // TranslatorController.php
 // Below line of code works like, type in url domingo.bingo/translator and then you are redirect to index() function in TranslatorController.php

@@ -11,9 +11,9 @@ class ProductsController extends Controller
 
         $greetings = "Welcome in Products";
         $description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas earum iure consectetur quia.";
-        return view('index', compact('greetings', 'description'));        
+        return view('index', compact('greetings', 'description'));
     }
-    
+
     public function vegetables() {
         // Second way - with method
         $data = [
@@ -21,5 +21,9 @@ class ProductsController extends Controller
             "OrderTwo" => "Broccoli"
         ];
         return view('vegetables')->with('data', $data);
+    }
+
+    public function pattern($letters, $numbers) {
+        return "OK ".$letters." : ".$numbers;
     }
 }
