@@ -8,7 +8,7 @@ class ProductsController extends Controller
 {
     public function index() {
         // First way - compact()
-
+        print_r(route("products"));
         $greetings = "Welcome in Products";
         $description = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas earum iure consectetur quia.";
         return view('index', compact('greetings', 'description'));
