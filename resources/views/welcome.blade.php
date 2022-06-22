@@ -27,7 +27,16 @@
             <a href="{{ route('welcome') }}/routes">
                 <button>Show me list of routes</button>
             </a>
+        </div>
+            <h2>Images</h2>
+            <br>
+            The image is in public folder. It means that anyone has access.
+            <br>
             <img src="{{ URL('images/icon-box.jpg') }}" alt="icon-box">
+            <br>
+            The image is kept in the storage folder, so no one has direct access to it.
+            <br>
+            <img src="{{ URL('storage/hero-banner.jpg') }}" alt="icon-box">
         </div>
     </body>
 </html>
