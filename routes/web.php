@@ -16,10 +16,12 @@ use App\Http\Controllers\TranslatorController;
 |
 */
 
+
 // Main page
 Route::get('/', function () {
     return view('welcome');
 }) -> name('welcome');
+
 
 // ProductsController.php
 Route::get('/products', [ProductsController::class, 'index']) -> name('products');
@@ -29,6 +31,7 @@ Route::get('products/pattern/{letters}/{numbers}',
         'letters' => '[a-zA-Z]+',
         'numbers' => '(-[0-9]+)|([0-9]+)'
     ]); // http://domingo.bingo/products/pattern/enyWord/22
+
 
 // TranslatorController.php
 // Below line of code works like, type in url domingo.bingo/translator and then you are redirect to index() function in TranslatorController.php
@@ -43,9 +46,7 @@ Route::get('/contact', [PageController::class, 'index']) -> name('contact');
 Route::get('/portfolio', [PageController::class, 'index']) -> name('portfolio');
 
 
-
-
-
+// It gives every route in app
 Route::get('routes', function () {
     $routeCollection = Route::getRoutes();
 

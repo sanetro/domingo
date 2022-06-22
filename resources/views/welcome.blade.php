@@ -27,6 +27,7 @@
             <a href="{{ route('welcome') }}/routes">
                 <button>Show me list of routes</button>
             </a>
+            <img src="{{ URL('images/icon-box.jpg') }}" alt="icon-box">
         </div>
     </body>
 </html>
