@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
 
         <style>
@@ -21,6 +22,9 @@
         </style>
     </head>
     <body class="antialiased">
+        <header>
+            @include('layouts.header')
+        </header>
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             <h1>Domingo</h1>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus placeat deserunt sit incidunt numquam, quasi sint libero veritatis, debitis repellendus maxime asperiores reiciendis odit soluta temporibus ipsam adipisci deleniti cumque.

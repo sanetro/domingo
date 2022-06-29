@@ -6,6 +6,7 @@
     <title>Domingo & Products</title>
 </head>
 <body>
+
     <h1>Products</h1>
     <p>{{ $greetings }}</p>
     <p>{{ $description }}</p>
