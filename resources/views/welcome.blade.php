@@ -42,5 +42,7 @@
             <br>
             <img src="{{ URL('storage/hero-banner.jpg') }}" alt="icon-box">
         </div>
+        @include('layouts.footer')
+
     </body>
 </html>
