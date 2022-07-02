@@ -4,6 +4,7 @@ use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\TranslatorController;
+use App\Http\Controllers\PostsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,10 @@ use App\Http\Controllers\TranslatorController;
 |
 */
 
+/*
+Connect to mysql databases
+sudo mysql -u root
+*/
 
 // Main page
 Route::get('/', function () {
@@ -46,6 +51,7 @@ Route::get('/contact', [PageController::class, 'index']) -> name('contact');
 Route::get('/portfolio', [PageController::class, 'index']) -> name('portfolio');
 
 
+
 // It gives every route in app
 Route::get('routes', function () {
     $routeCollection = Route::getRoutes();
@@ -67,3 +73,6 @@ Route::get('routes', function () {
     }
     echo "</table>";
 });
+
+Route::get('/posts', [PostsController::class, 'index']);
+
