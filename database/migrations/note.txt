@@ -1,0 +1,15 @@
+Error 1.
+
+"SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost'
+(using password: NO) (SQL: select * from information_schema.tables
+where table_schema = domingo and table_name = migrations and table_type
+= 'BASE TABLE')"
+
+Check connection between artisan and mysql database. Set up .env file.
+Host, password, user, etc. must be equals. Next type:
+
+php artisan config:cache
+php artisan cache:clear
+php artisan migrate
+
+It should works
