@@ -74,5 +74,6 @@ Route::get('routes', function () {
     echo "</table>";
 });
 
+// PostsController.php
 Route::get('/posts', [PostsController::class, 'index']);
 
