@@ -40,7 +40,7 @@ class PostsController extends Controller
         //
         // I must comment it becouse It would inserting over and over when user refresh page
 
-
+        // To do: Make eloquents
 
         dd(
             $posts,

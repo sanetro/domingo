@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\CarsController;
 use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\TranslatorController;
 use App\Http\Controllers\PostsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -77,3 +79,6 @@ Route::get('routes', function () {
 // PostsController.php
 Route::get('/posts', [PostsController::class, 'index']);
 
+// CarsController.php
+Route::get('/cars', [CarsController::class, 'index']);
+// Note: php artisan route:list
