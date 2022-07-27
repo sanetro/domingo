@@ -16,16 +16,23 @@
 
 
         <div class="m-auto w-5/6 py-10">
-            <div class="m-auto">
-                <span class="uppercase text-blue-500 font-bold text-xs italic">
-                    Founded: 2020
-                </span>
 
-                <h2 class="text-gray-700 text-5xl">
-                    Audi
+            @foreach ($cars as $car)
+                <div class="m-auto">
+                    <span class="uppercase text-blue-500 font-bold text-xs italic">
+                        Founded: {{ $car->founded }}
+                    </span>
 
-                </h2>
-            </div>
+                    <h2 class="text-gray-700 text-5xl">
+                        {{ $car->name }}
+                    </h2>
+
+                    <p class="text-lg text-gray-700 py-6">
+                        {{ $car->description }}
+                    </p>
+                </div>
+            @endforeach
+
         </div>
     </div>
 @endsection
