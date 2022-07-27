@@ -13,8 +13,6 @@ class Car extends Model
 
     protected $primaryKey = "id";
 
-    protected $timestamps = true;
 
-    protected $dateFormat = "h:m:s";
 
 }

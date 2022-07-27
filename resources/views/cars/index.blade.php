@@ -14,6 +14,13 @@
             </div>
         </div>
 
+        <div class="pt-10">
+            <a href="cars/create"
+            class="border-b-2 pb-2 border-dotted italic text-gray-500">
+                Click to create
+            </a>
+        </div>
+
 
         <div class="m-auto w-5/6 py-10">
 
