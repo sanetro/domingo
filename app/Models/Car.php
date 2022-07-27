@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Car extends Model
 {
     use HasFactory;
+
+    protected $table = "cars";
+
+    protected $primaryKey = "id";
+
+    protected $timestamps = true;
+
+    protected $dateFormat = "h:m:s";
+
 }
