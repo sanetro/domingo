@@ -15,6 +15,10 @@ class CarsController extends Controller
     public function index()
     {
         $cars =  Car::all();
+        // $cars =  Car::where('name', '=', 'Audi')
+        //      ->get();;
+        // 23:38 Introduction To Eloquent | Laravel For Beginners | Learn Laravel
+
         return view('cars/index', [
             'cars' => $cars
         ]);
