@@ -84,4 +84,8 @@ Route::get('/cars', [CarsController::class, 'index']);
 
 Route::get('/cars/create', [CarsController::class, 'create']);
 Route::post('/cars/store', [CarsController::class, 'store']);
+Route::get('/cars/{id}/edit', [CarsController::class, 'edit']);
+Route::post('/cars/{id}', [CarsController::class, 'update']);
+
+
 // Note: php artisan route:list
