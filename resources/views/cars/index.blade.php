@@ -31,7 +31,13 @@
                             href="cars/{{ $car->id }}/edit">
                             Edit &rarr;
                         </a>
+                        <br>
+                        <a  class="border-b-2 pb-2 border-dotted italic text-red-500"
+                            href="cars/{{ $car->id }}/destroy">
+                            Delete &cross;
+                        </a>
                     </div>
+
                     <span class="uppercase text-blue-500 font-bold text-xs italic">
                         Founded: {{ $car->founded }}
                     </span>
